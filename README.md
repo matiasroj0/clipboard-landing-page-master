@@ -4,7 +4,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://euphonious-pixie-9ca124.netlify.app/
 
 ### Screenshot
 
