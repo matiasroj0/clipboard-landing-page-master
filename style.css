@@ -1,0 +1,415 @@
+:root {
+    /* primary */
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    /* neutral */
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+/* css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/*  */
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    background-image: url(/images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section {
+    padding-bottom: 6rem;
+}
+
+.logo {
+    width: 33%;
+    padding-bottom: 3.5rem;
+}
+
+.logo-section h1 {
+    font-size: 1.66rem;
+    line-height: 2rem;
+    color: var(--dark-grayish-blue);
+    padding-bottom: 1.2rem;
+}
+
+.logo-section p {
+    color: var(--grayish-blue);
+    font-size: .95rem;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+    line-height: 1.7rem;
+    padding-bottom: 1.1rem;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-size: .95rem;
+}
+
+.download-buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.download-button {
+    padding: .65rem;
+    border-radius: 5rem;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    font-size: .9rem;
+    color: white;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    opacity: .7;
+}
+
+.download-button-ios {
+    background-color: var(--light-blue);
+}
+
+.download-button-mac {
+    background-color: var(--strong-cyan);
+}
+
+.snippets-section {
+    padding-bottom: 6rem;
+}
+
+.snippets-section h2 {
+    font-size: 1.5rem;
+}
+
+.snippets-section p {
+    padding-bottom: 3.5rem;
+}
+
+.computer-img {
+    padding-bottom: 3rem;
+}
+
+.snippet h3 {
+    color: var(--dark-grayish-blue);
+    padding-bottom: .4rem;
+    font-size: 1.3rem;
+}
+
+.snippet p {
+    padding-bottom: 2rem;
+}
+
+.access-clipboard-anywhere p {
+    padding-bottom: 2.3rem;
+}
+
+.access-clipboard-anywhere {
+    padding-bottom: 6rem;
+}
+
+.supercharge-workflow {
+    padding-bottom: 7rem;
+}
+
+.supercharge-workflow-div-container {
+    padding-top: 5rem;
+    display: flex;    
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.supercharge-workflow-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+
+.supercharge-workflow-div img {
+    padding-bottom: 1.4rem;
+}
+
+.company-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-bottom: 8rem;
+}
+
+.company-logos img {
+    width: 25%;
+}
+
+.download-section {
+    padding-bottom: 7rem;
+}
+
+.download-section p {
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.footer-flex-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h5 {
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+footer h5:hover {
+    color: var(--strong-cyan);
+}
+
+footer img {
+    width: 30%;
+    padding-bottom: 2rem;
+}
+
+.footer-logos-div {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    padding-top: 2rem;
+}
+
+footer {
+    color: var(--dark-grayish-blue);
+    font-size: 1.3rem;
+}
+
+.footer-icon {
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    color: var(--strong-cyan);
+}
+
+@media (min-width:1200px) {
+    body {
+        background-image: url(/images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        overflow-x: hidden;
+    }
+
+    .logo-section {
+        padding-bottom: 8rem;
+    }
+    
+    .logo {
+        width: 6%;
+    }
+    
+    br {
+        display: none;
+    }
+    
+    .logo-section h1 {
+        font-size: 2.2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .logo-section p {
+        font-size: 1rem;
+        padding: 0rem 30rem;
+        padding-bottom: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.9rem;
+        padding-bottom: 1.3rem;
+    }
+    
+    p {
+        font-size: .98rem;
+        padding: 0rem;
+    }
+    
+    .download-buttons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .download-button {
+        padding: .75rem 4rem;
+        border-radius: 5rem;
+    }
+    
+    .snippets-section {
+        padding-bottom: 6rem;
+    }
+    
+    .snippets-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .snippets-section p {
+        padding-bottom: 4rem;
+    }
+    
+    .snippet-p {
+        padding: 0 27rem;
+        padding-bottom: 4rem;
+    }
+
+    .snippets-section-div {
+        display: flex;
+        text-align: left;
+        gap: 5rem;
+        padding-right: 20rem;
+    }
+    
+    .snippets-container {
+        padding-top: 4rem;
+    }
+
+    .computer-img {
+        padding-bottom: 3rem;
+        margin-left: -4rem;
+        width: 110%;
+    }
+    
+    .snippet h3 {
+        padding-bottom: .4rem;
+        font-size: 1.3rem;
+    }
+    
+    .snippet p {
+        padding-bottom: 3rem;
+    }
+    
+    .access-clipboard-anywhere p {
+        padding-bottom: 2.3rem;
+    }
+    
+    .access-clipboard-anywhere {
+        padding-bottom: 6rem;
+    }
+    
+    .supercharge-workflow {
+        padding-bottom: 11rem;
+    }
+    
+    .supercharge-workflow-div-container {
+        padding: 0 13rem;
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .company-logos {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 5rem;
+        padding-bottom: 10rem;
+    }
+    
+    .company-logos img {
+        width: 10%;
+    }
+    
+    .download-section {
+        padding-bottom: 11rem;
+    }
+    
+    .download-section p {
+        padding: 0 24rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom:2rem;
+        text-align: left;
+    }
+    
+    .footer-flex-div{
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+    }
+
+    footer img {
+        width: 6%;
+        margin-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    
+    .footer-logos-div {
+        padding-top: 0;
+        margin-top: -.5rem;
+    }
+    
+    footer h5 {
+        padding-bottom: 0rem;
+        cursor: pointer;
+    }
+    
+}
